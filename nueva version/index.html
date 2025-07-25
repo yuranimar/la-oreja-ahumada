@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Oreja de Asís</title>
+  <!-- AOS (Animate On Scroll) CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+  <!-- FAVICON -->
+  <link rel="icon" href="img/logo1.png" type="image/png">
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Librería AOS para animaciones al hacer scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Fondo oscuro -->
+  <div class="background-overlay"></div>
+
+  
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+  <!-- Logo -->
+  <div class="logo">
+    <img src="img/logo1.png" alt="Logo del restaurante">
+  </div>
+
+
+  <!-- Botón de menú hamburguesa -->
+  <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+    <i class="fas fa-bars"></i>
+  </button>
+ <!-- Enlaces del menú -->
+    <ul id="nav-links" class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <!-- Redes sociales -->
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </nav>
+</header>
+
+  <!-- SECCIÓN INICIO -->
+  <section id="inicio" class="text-center py-5">
+    <div class="container">
+      <h1 class="mb-4">La Oreja de Asís</h1>
+      <p class="lead">Comida con alma, tradición artesanal y sabor rústico.</p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN MENÚ -->
+  <section id="menu" class="seccion-menu">
+    <div class="container">
+      <h2 class="text-center mb-5">Nuestro Menú</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="img/empanada.jpg" class="card-img-top" alt="Empanadas">
+            <div class="card-body">
+              <h5 class="card-title">Empanadas Artesanales</h5>
+              <p class="card-text">Crujientes por fuera, suaves por dentro. Rellenas de amor y sabor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="img/bandeja.jpg"card-img-top" alt="Bandeja Paisa">
+            <div class="card-body">
+              <h5 class="card-title">Bandeja Paisa</h5>
+              <p class="card-text">Un clásico colombiano con chicharrón, frijoles, arroz, huevo y más.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="img/postre.jpg" class="card-img-top" alt="Postres Caseros">
+            <div class="card-body">
+              <h5 class="card-title">Postres Caseros</h5>
+              <p class="card-text">Dulces tradicionales preparados con recetas de la abuela.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- SOBRE NOSOTROS / HISTORIA -->
+<section id="historia" class="section historia-section">
+  <div class="historia-container">
+    <div class="historia-text" data-aos="fade-right">
+      <h2>Sobre Nosotros</h2>
+      <p>Desde los fogones hasta tu mesa, contamos una historia de tradición, sabor y pasión por lo auténtico. Nuestro restaurante nació del deseo de compartir recetas familiares y ahumados artesanales en un ambiente cálido y rústico.</p>
+    </div>
+    <div class="historia-img" data-aos="fade-left">
+      <img src="img/historia.jpg" alt="Historia del restaurante">
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- TESTIMONIOS -->
+  <section id="testimonios" class="section testimonios-section" data-aos="fade-up">
+    <h2>Testimonios</h2>
+    <blockquote data-aos="fade-right">“El mejor sabor ahumado que he probado” – Juan P.</blockquote>
+    <blockquote data-aos="fade-left">“Ambiente rústico y comida deliciosa” – Laura M.</blockquote>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="section ubicacion-section" data-aos="zoom-in">
+    <h2>¿Dónde Estamos?</h2>
+    <p>📍 Calle Ficticia #123 – Medellín, Colombia</p>
+
+    <!-- Mapa embebido (reemplaza el src con el tuyo si quieres) -->
+    <div class="map-container" data-aos="fade-up">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.846601118078!2d-75.57618958467508!3d6.24420329548138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44282f97ae3d79%3A0x64b4bb8a3f0f5bc3!2sLaureles%2C%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1626190274342!5m2!1ses!2sco" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="custom-footer" data-aos="fade-up">
+    <div class="container">
+      <p><strong>📍 Dirección:</strong> Barrio Laureles, Medellín</p>
+      <p><strong>📞 Teléfono:</strong> 301 555 5555 | <strong>📧 Email:</strong> laorejadeasis@gmail.com</p>
+      <p>Síguenos:
+        <a href="#"><i class="fab fa-facebook"></i></a> |
+        <a href="#"><i class="fab fa-instagram"></i></a> |
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </p>
+      <p>&copy; 2025 La Oreja de Asís. Todos los derechos reservados.</p>
+      <p>Desarrollado por Yurani Martínez</p>
+    </div>
+  </footer>
+
+  <!-- Scripts AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", function () {
+      nav.classList.toggle("show");
+    });
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // duración de la animación en milisegundos
+    once: true      // la animación solo se ejecuta una vez
+  });
+</script>
+
+</body>
+</html>

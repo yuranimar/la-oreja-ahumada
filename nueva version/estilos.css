@@ -1,0 +1,489 @@
+/* ==========================
+   ESTILOS GENERALES
+========================== */
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: url('img/fondo\ madera.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* Fondo oscuro semitransparente para mejorar legibilidad */
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* ==========================
+   NAVBAR PERSONALIZADA
+========================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  height: 80px; /* o 70px si prefieres menos */
+  max-height: 100px;
+  width: auto;
+}
+
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Enlaces del menú */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #c0392b;
+}
+
+/* RESPONSIVE: Pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+
+/* Íconos de redes sociales */
+.social-links a {
+  color: #555;
+  margin-left: 10px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e74c3c;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+
+/* ==========================
+   SECCIÓN INICIO
+========================== */
+
+#inicio {
+  padding: 100px 20px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+#inicio h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#inicio p {
+  font-size: 1.25rem;
+}
+
+/* ==========================
+   SECCIÓN MENÚ
+========================== */
+
+.seccion-menu {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.seccion-menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: 'Pacifico', cursive;
+  color: #c0392b;
+}
+
+/* Tarjetas del menú */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #c0392b;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+/* ==========================
+   GENERAL - SECCIÓN HISTORIA
+========================== */
+.historia-section {
+  padding: 60px 20px;
+  background-color: #f8f4f1;
+}
+
+.historia-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.historia-text {
+  flex: 1 1 300px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  text-align: left;
+}
+
+.historia-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #6d3c3c;
+}
+
+.historia-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.historia-img {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.historia-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   TESTIMONIOS
+========================== */
+blockquote {
+  font-style: italic;
+  background: rgba(255, 245, 230, 0.7);
+  padding: 15px 25px;
+  border-left: 6px solid #a0522d;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 6px;
+}
+
+/* ==========================
+   CONTACTO Y MAPA
+========================== */
+.contacto-section {
+  background-color: rgba(255, 250, 240, 0.85);
+  padding: 80px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  background-color: #a0522d;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #833714;
+}
+
+.mapa-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* ==========================
+   PIE DE PÁGINA
+========================== */
+.custom-footer {
+  background-color: #3b2e2e;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  animation: fadeIn 1s ease-in;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info,
+.footer-social,
+.footer-copy {
+  margin: 10px 0;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+/* Colores por red social */
+.footer-social a[href*="facebook"] {
+  color: #3b5998;
+}
+
+.footer-social a[href*="instagram"] {
+  color: #e4405f;
+}
+
+.footer-social a[href*="whatsapp"] {
+  color: #25d366;
+}
+
+.footer-social a:hover {
+  color: #f1c40f;
+}
+
+.footer-copy p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+/* ==========================
+   ANIMACIONES
+========================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounceIn {
+  0% { opacity: 0; transform: scale(0.3); }
+  50% { opacity: 1; transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+/* Clases utilitarias */
+.animar-fadeInUp {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.animar-slideInLeft {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animar-slideInRight {
+  animation: slideInRight 1s ease forwards;
+}
+
+.animar-zoomIn {
+  animation: zoomIn 1s ease forwards;
+}
+
+.animar-bounceIn {
+  animation: bounceIn 1s ease forwards;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 768px) {
+  .historia-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .historia-text {
+    text-align: center;
+  }
+
+  .historia-text h2 {
+    font-size: 2rem;
+  }
+
+  .historia-text p {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .section p,
+  .section blockquote {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-info,
+  .footer-social,
+  .footer-copy {
+    flex: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-img-top {
+    height: 180px;
+  }
+
+  #inicio h1 {
+    font-size: 2.3rem;
+  }
+
+  .seccion-menu h2 {
+    font-size: 2rem;
+  }
+}
+
